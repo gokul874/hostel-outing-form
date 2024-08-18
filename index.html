@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Project</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <h1>Successfully sent the email</h1>
+
+    <div class="container"> 
+  
+        <h2 class="text-center">Submitted Data</h2> <br>
+        
+        <h4 class="mb-1">Student Name:</h4>
+        <div class="mb-3">{{data['student_name']}}</div>
+    
+        <h4 class="mb-1">Registration Number:</h4>
+        <div class="mb-3">{{data['reg_no']}}</div>
+    
+        <h4 class="mb-1">Email ID:</h4>
+        <div class="mb-3">{{data['email']}}</div>
+    
+        <h4 class="mb-1">Phone Number:</h4>
+        <div class="mb-3">{{data['phone_no']}}</div>
+    
+        <h4 class="mb-1">Department:</h4>
+        <div class="mb-3">{{data['department']}}</div>
+    
+        <h4 class="mb-1">Address:</h4>
+        <div class="mb-3">{{data['address']}}</div>
+    
+        <h4 class="mb-1">Date of Leaving:</h4>
+        <div class="mb-3">{{data['leaving_date']}}</div>
+    
+        <h4 class="mb-1">Date of Arriving:</h4>
+    <div class="mb-3">{{data['arriving_date']}}</div>
+
+    {% include 'footer.html' %}
+</body>
+</html>
