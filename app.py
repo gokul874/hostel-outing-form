@@ -17,8 +17,8 @@ def index():
     keys = ["Name", "Registeration Number", "Phone Number", "Email", "Department", "Address", "Leaving Date", "Arriving Date",]
 
     email = data['email']
-    sender = "ganessh7114@gmail.com"
-    password = "krvqssopqhulecul"
+    sender = "enter ur mail"
+    password = "enter your pass"
 
     pdf_file = "Outing Form.pdf"
     fill_pdf(pdf_file, form_values, keys)
